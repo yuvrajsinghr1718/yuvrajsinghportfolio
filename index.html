@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Yuvraj Singh Rathore | Civil Engineering & BIM Portfolio | JECRC University</title>
+  <meta name="description" content="Personal portfolio of Yuvraj Singh Rathore, Civil Engineering student at JECRC University, Jaipur. Exploring CAD, BIM, ETABS, Civil 3D, and modern digital construction workflows.">
+  <meta name="author" content="Yuvraj Singh Rathore">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Yuvraj Singh Rathore | Civil Engineering & BIM Portfolio">
+  <meta property="og:description" content="Civil Engineering Student | BIM & CAD Enthusiast | Future Civil Engineering Professional — JECRC University, Jaipur.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📐</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Three.js: Local with CDN Fallback for Offline & Local File Compatibility -->
+  <script src="js/three.min.js"></script>
+  <script>
+    if (typeof THREE === 'undefined') {
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"><\/script>');
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Mathematical Blueprint Grid Background -->
+  <div class="blueprint-grid-bg" aria-hidden="true"></div>
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-link" aria-label="Yuvraj Singh Rathore Portfolio Home">
+        <div class="brand-icon-box">
+          <span>YSR</span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Yuvraj Singh Rathore</span>
+          <span class="brand-meta">CIVIL // BIM // CAD</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#career-interests" class="nav-link">Career Interests</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Controls: Theme Switcher & Resume Action -->
+      <div class="nav-controls">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Dark / Light Theme" title="Toggle Blueprint Theme">
+          <span id="theme-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+        </button>
+
+        <button class="btn btn-blueprint btn-sm nav-resume-btn btn-open-resume" aria-label="Download One-Page Resume">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download Resume
+        </button>
+
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Mobile Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="#hero" class="mobile-nav-link"><span>Home</span> <span class="number">01</span></a>
+      <a href="#about" class="mobile-nav-link"><span>About</span> <span class="number">02</span></a>
+      <a href="#education" class="mobile-nav-link"><span>Education</span> <span class="number">03</span></a>
+      <a href="#skills" class="mobile-nav-link"><span>Skills</span> <span class="number">04</span></a>
+      <a href="#projects" class="mobile-nav-link"><span>Projects</span> <span class="number">05</span></a>
+      <a href="#achievements" class="mobile-nav-link"><span>Achievements</span> <span class="number">06</span></a>
+      <a href="#career-interests" class="mobile-nav-link"><span>Career Interests</span> <span class="number">07</span></a>
+      <a href="#contact" class="mobile-nav-link"><span>Contact</span> <span class="number">08</span></a>
+    </div>
+    <div style="margin-top: auto;">
+      <button class="btn btn-primary btn-open-resume" style="width: 100%;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Download Resume
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Column: Professional Identity & CTAs -->
+          <div class="hero-content">
+            <div class="hero-status-pill">
+              <span class="status-dot"></span>
+              <span>B.Tech Civil Engineering // JECRC University, Jaipur</span>
+            </div>
+
+            <h1 class="hero-title">
+              Yuvraj Singh <span class="highlight">Rathore</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Civil Engineering Student | BIM &amp; CAD Enthusiast | Future Civil Engineering Professional
+            </p>
+
+            <p class="hero-supporting-text">
+              &ldquo;Engineering ideas into digital models, practical designs and better-built spaces.&rdquo;
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary btn-lg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                View My Projects
+              </a>
+
+              <a href="https://www.linkedin.com/in/yuvraj-singh-rathore-68978142/" target="_blank" rel="noopener noreferrer" class="btn btn-blueprint btn-lg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+                Connect on LinkedIn
+              </a>
+            </div>
+
+            <!-- Quick Academic Highlights Ribbon -->
+            <div class="hero-quick-stats">
+              <div class="quick-stat-item">
+                <span class="quick-stat-val accent">9.0 SGPA</span>
+                <span class="quick-stat-lbl">B.Tech 1st Semester</span>
+              </div>
+              <div class="quick-stat-item">
+                <span class="quick-stat-val">89.00%</span>
+                <span class="quick-stat-lbl">Class 12 RBSE (2025)</span>
+              </div>
+              <div class="quick-stat-item">
+                <span class="quick-stat-val">89.67%</span>
+                <span class="quick-stat-lbl">Class 10 RBSE (2023)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive 3D Structural / BIM Visualizer -->
+          <div class="hero-visual-card cad-corner-marks">
+            <div class="visual-hud-header">
+              <div class="hud-title">
+                <span class="pulse"></span>
+                <span>STRUCTURAL FRAME // THREE.JS 3D BIM</span>
+              </div>
+              <div style="font-family: var(--font-mono); color: var(--accent-cyan); font-size: 0.7rem;">
+                AXIS: <span id="hud-rot-x">24°</span> | <span id="hud-rot-y">55°</span>
+              </div>
+            </div>
+
+            <!-- 3D Canvas Container -->
+            <div class="canvas-container" id="canvas-container">
+              <!-- Three.js Canvas attaches here -->
+            </div>
+
+            <!-- Visualizer HUD Footer Controls -->
+            <div class="visual-hud-footer">
+              <div style="display: flex; gap: 0.75rem;">
+                <span>NODES: <strong id="hud-nodes" style="color: var(--accent-cyan);">48</strong></span>
+                <span>MEMBERS: <strong id="hud-members" style="color: var(--accent-cyan);">92</strong></span>
+              </div>
+              <div class="hud-controls-group">
+                <button class="hud-btn active" id="btn-toggle-rotate" title="Toggle Auto-Rotation">Rotate</button>
+                <button class="hud-btn" id="btn-toggle-wire" title="Toggle CAD Wireframe">Wireframe</button>
+                <button class="hud-btn active" id="btn-toggle-grid" title="Toggle Base Grid">Grid</button>
+                <button class="hud-btn" id="btn-reset-view" title="Reset Isometric Camera">Reset</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ACADEMIC ACHIEVEMENTS (STATISTIC CARDS)
+         ========================================================================== -->
+    <section class="section section-alt" id="achievements">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="tech-badge">ACADEMIC EXCELLENCE</div>
+          <h2 class="section-title">Academic Achievements</h2>
+          <p class="section-subtitle">
+            Strong academic consistency and quantitative rigor demonstrated across secondary, higher secondary, and undergraduate engineering education.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          <!-- Stat Card 1: B.Tech 1st Semester -->
+          <div class="stat-card cad-corner-marks">
+            <div class="stat-corner-accent"></div>
+            <div class="stat-card-header">
+              <span class="stat-tag">UNDERGRADUATE</span>
+              <span class="stat-year">Session 2026–27</span>
+            </div>
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="9.0" data-decimal="false">9.0</span>
+              <span class="stat-unit">/ 10</span>
+            </div>
+            <div class="stat-label">B.Tech 1st Semester SGPA</div>
+            <p class="stat-desc">
+              Bachelor of Technology in Civil Engineering at JECRC University, Jaipur. Demonstrating exceptional foundational grasp of applied engineering disciplines.
+            </p>
+          </div>
+
+          <!-- Stat Card 2: Class 12 RBSE Board -->
+          <div class="stat-card cad-corner-marks">
+            <div class="stat-corner-accent"></div>
+            <div class="stat-card-header">
+              <span class="stat-tag">HIGHER SECONDARY</span>
+              <span class="stat-year">Passed in 2025</span>
+            </div>
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="89" data-decimal="false">89</span>
+              <span class="stat-unit">%</span>
+            </div>
+            <div class="stat-label">Class 12 – RBSE Board</div>
+            <p class="stat-desc">
+              High distinction in Rajasthan Board of Secondary Education examinations with rigorous emphasis on Mathematics and Physical Sciences.
+            </p>
+          </div>
+
+          <!-- Stat Card 3: Class 10 RBSE Board -->
+          <div class="stat-card cad-corner-marks">
+            <div class="stat-corner-accent"></div>
+            <div class="stat-card-header">
+              <span class="stat-tag">SECONDARY EDUCATION</span>
+              <span class="stat-year">Passed in 2023</span>
+            </div>
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="89.67" data-decimal="true">89.67</span>
+              <span class="stat-unit">%</span>
+            </div>
+            <div class="stat-label">Class 10 – RBSE Board</div>
+            <p class="stat-desc">
+              Outstanding academic performance across foundational sciences and mathematics, creating the groundwork for technical engineering studies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT ME SECTION
+         ========================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="tech-badge">ENGINEERING PROFILE</div>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">
+            Dedicated undergraduate Civil Engineer combining analytical discipline with modern digital drafting, structural analysis, and BIM technologies.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Narrative Card -->
+          <div class="about-text-content cad-corner-marks">
+            <p class="about-lead-quote">
+              &ldquo;I am Yuvraj Singh Rathore, a Civil Engineering student at JECRC University, Jaipur, with a strong interest in modern civil engineering technologies, CAD, BIM, structural modelling and digital construction workflows. With a strong academic foundation and a 9.0 SGPA in my first semester, I am focused on developing practical engineering skills alongside my academic studies. I enjoy exploring how digital tools such as AutoCAD, Civil 3D, BIM and ETABS can improve the planning, modelling and analysis of civil engineering projects.&rdquo;
+            </p>
+
+            <div class="about-features-list">
+              <div class="about-feature-item">
+                <span class="about-feature-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <div>
+                  <strong style="color: var(--text-primary); display: block;">Digital Construction &amp; BIM</strong>
+                  <span>Parametric 3D element coordination, spatial organization, and LOD standards.</span>
+                </div>
+              </div>
+
+              <div class="about-feature-item">
+                <span class="about-feature-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <div>
+                  <strong style="color: var(--text-primary); display: block;">Structural Analysis via ETABS</strong>
+                  <span>Studying load paths, frame boundary conditions, and bending-shear envelopes.</span>
+                </div>
+              </div>
+
+              <div class="about-feature-item">
+                <span class="about-feature-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <div>
+                  <strong style="color: var(--text-primary); display: block;">CAD 2D Drafting &amp; Planning</strong>
+                  <span>Precise architectural layouts, municipal setbacks, and space allocation.</span>
+                </div>
+              </div>
+
+              <div class="about-feature-item">
+                <span class="about-feature-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <div>
+                  <strong style="color: var(--text-primary); display: block;">Infrastructure with Civil 3D</strong>
+                  <span>Surface contours, TIN modelling, grading, and road alignment geometry.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Profile Data Card -->
+          <div class="profile-card cad-corner-marks">
+            <div class="profile-card-header">
+              <div class="profile-avatar-ph">
+                <span>YSR</span>
+              </div>
+              <h3 class="profile-name">Yuvraj Singh Rathore</h3>
+              <p class="profile-headline">Civil Engineering Undergraduate // Future Structural &amp; BIM Professional</p>
+            </div>
+
+            <div class="profile-details-list">
+              <div class="profile-detail-row">
+                <span class="profile-detail-lbl">University:</span>
+                <span class="profile-detail-val">JECRC University, Jaipur</span>
+              </div>
+              <div class="profile-detail-row">
+                <span class="profile-detail-lbl">Degree:</span>
+                <span class="profile-detail-val">B.Tech – Civil Engineering</span>
+              </div>
+              <div class="profile-detail-row">
+                <span class="profile-detail-lbl">Current Status:</span>
+                <span class="profile-detail-val">Undergraduate Student</span>
+              </div>
+              <div class="profile-detail-row">
+                <span class="profile-detail-lbl">Academic Session:</span>
+                <span class="profile-detail-val">2026–27</span>
+              </div>
+              <div class="profile-detail-row">
+                <span class="profile-detail-lbl">Expected Graduation:</span>
+                <span class="profile-detail-val">2030</span>
+              </div>
+              <div class="profile-detail-row">
+                <span class="profile-detail-lbl">Location:</span>
+                <span class="profile-detail-val">Jaipur, Rajasthan, India</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.5rem; text-align: center;">
+              <a href="https://www.linkedin.com/in/yuvraj-singh-rathore-68978142/" target="_blank" rel="noopener noreferrer" class="btn btn-blueprint btn-sm" style="width: 100%;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+                Connect on LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EDUCATION & ACADEMIC HIGHLIGHTS
+         ========================================================================== -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-header">
+          <div class="tech-badge">CHRONOLOGY &amp; MERIT</div>
+          <h2 class="section-title">Education &amp; Academic Highlights</h2>
+          <p class="section-subtitle">
+            A transparent and realistic record of formal education milestones and ongoing technical competency development.
+          </p>
+        </div>
+
+        <div class="education-highlights-grid">
+          <!-- Left Column: Elegant Vertical Timeline -->
+          <div>
+            <h3 style="font-size: 1.3rem; margin-bottom: 1.5rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-cyan);"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              Education Timeline
+            </h3>
+
+            <div class="timeline">
+              <!-- Milestone 1: B.Tech -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card cad-corner-marks">
+                  <div class="timeline-date">2026 – PRESENT // UNDERGRADUATE</div>
+                  <h4 class="timeline-degree">B.Tech — Civil Engineering</h4>
+                  <div class="timeline-institution">JECRC University, Jaipur, Rajasthan</div>
+                  <p style="font-size: 0.84rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+                    Academic Session 2026–27 | Expected Graduation: 2030. Focusing on structural mechanics, digital drafting, BIM, and construction technology.
+                  </p>
+                  <span class="timeline-score-badge">1st Sem SGPA: 9.0 / 10</span>
+                </div>
+              </div>
+
+              <!-- Milestone 2: Class 12 -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card cad-corner-marks">
+                  <div class="timeline-date">2025 // HIGHER SECONDARY</div>
+                  <h4 class="timeline-degree">Class 12 — Senior Secondary</h4>
+                  <div class="timeline-institution">Board of Secondary Education, Rajasthan (RBSE)</div>
+                  <p style="font-size: 0.84rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+                    Completed rigorous coursework in Mathematics, Physics, and Chemistry, laying the theoretical foundation for engineering studies.
+                  </p>
+                  <span class="timeline-score-badge">Final Score: 89.00%</span>
+                </div>
+              </div>
+
+              <!-- Milestone 3: Class 10 -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card cad-corner-marks">
+                  <div class="timeline-date">2023 // SECONDARY SCHOOL</div>
+                  <h4 class="timeline-degree">Class 10 — Secondary School</h4>
+                  <div class="timeline-institution">Board of Secondary Education, Rajasthan (RBSE)</div>
+                  <p style="font-size: 0.84rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+                    Passed secondary board examinations with high distinction across scientific disciplines and mathematics.
+                  </p>
+                  <span class="timeline-score-badge">Final Score: 89.67%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Academic Highlights -->
+          <div>
+            <h3 style="font-size: 1.3rem; margin-bottom: 1.5rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-cyan);"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              Academic Highlights
+            </h3>
+
+            <div class="highlights-card cad-corner-marks">
+              <div class="highlight-items-list">
+                
+                <div class="highlight-item">
+                  <div class="highlight-icon-box">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                  </div>
+                  <div>
+                    <div class="highlight-text">9.0 SGPA in B.Tech 1st Semester</div>
+                    <div class="highlight-meta">JECRC University, Jaipur — Outstanding performance in engineering fundamentals.</div>
+                  </div>
+                </div>
+
+                <div class="highlight-item">
+                  <div class="highlight-icon-box">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                  </div>
+                  <div>
+                    <div class="highlight-text">89% in RBSE Class 12 (2025)</div>
+                    <div class="highlight-meta">Rajasthan Board of Secondary Education — Strong mathematics &amp; physics score.</div>
+                  </div>
+                </div>
+
+                <div class="highlight-item">
+                  <div class="highlight-icon-box">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                  </div>
+                  <div>
+                    <div class="highlight-text">89.67% in RBSE Class 10 (2023)</div>
+                    <div class="highlight-meta">Rajasthan Board of Secondary Education — First-class distinction.</div>
+                  </div>
+                </div>
+
+                <div class="highlight-item">
+                  <div class="highlight-icon-box">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                  </div>
+                  <div>
+                    <div class="highlight-text">Continuous Technical Skill Development</div>
+                    <div class="highlight-meta">Dedicated academic practice in AutoCAD 2D drafting, BIM modeling, Civil 3D site grading, and ETABS structural analysis.</div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Integrity Note -->
+              <div style="margin-top: 1.5rem; padding: 0.85rem; background: var(--bg-surface); border-radius: var(--border-radius-sm); border: 1px dashed var(--border-light); font-size: 0.78rem; color: var(--text-muted); line-height: 1.5;">
+                <strong style="color: var(--accent-cyan);">Note on Academic Profile:</strong> All achievements, academic grades, and course credentials represent verified factual educational benchmarks without fabrication of external awards, internships, or licenses.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TECHNICAL SKILLS SECTION
+         ========================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="tech-badge">TECHNICAL COMPETENCIES</div>
+          <h2 class="section-title">Technical Skills &amp; Focus Areas</h2>
+          <p class="section-subtitle">
+            Core civil engineering software tools and drafting fundamentals currently being studied, developed, and applied across coursework projects.
+          </p>
+        </div>
+
+        <!-- Ethical Transparency Disclaimer -->
+        <div class="skills-disclaimer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          <div>
+            <strong>Academic Learning Notice:</strong> These skills represent technologies and technical disciplines I am actively learning and cultivating proficiency in through coursework and independent technical practice.
+          </div>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="skills-filter-tabs">
+          <button class="skill-tab-btn active" data-filter="all">All Skills (10)</button>
+          <button class="skill-tab-btn" data-filter="cad">CAD &amp; Drafting</button>
+          <button class="skill-tab-btn" data-filter="bim">BIM &amp; 3D Modeling</button>
+          <button class="skill-tab-btn" data-filter="structural">Structural &amp; Infrastructure</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+          
+          <!-- Skill 1: AutoCAD -->
+          <div class="skill-card cad-corner-marks" data-category="cad">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+              </div>
+              <span class="skill-badge">Developing</span>
+            </div>
+            <h3 class="skill-title">AutoCAD</h3>
+            <p class="skill-desc">2D architectural drafting, layer management, dimensioning standards, dynamic blocks, and municipal submission drawings.</p>
+            <div class="skill-learning-bar-wrapper">
+              <div class="skill-learning-status">
+                <span>Learning Focus</span>
+                <span>Active Coursework</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-progress" style="width: 78%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 2: Civil 3D -->
+          <div class="skill-card cad-corner-marks" data-category="structural">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>
+              </div>
+              <span class="skill-badge">Developing</span>
+            </div>
+            <h3 class="skill-title">Civil 3D</h3>
+            <p class="skill-desc">TIN surface generation, contour generation, basic grading, corridor alignments, and site earthwork volume evaluation.</p>
+            <div class="skill-learning-bar-wrapper">
+              <div class="skill-learning-status">
+                <span>Learning Focus</span>
+                <span>Active Study</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-progress" style="width: 65%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 3: BIM (Building Information Modelling) -->
+          <div class="skill-card cad-corner-marks" data-category="bim">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+              </div>
+              <span class="skill-badge">Developing</span>
+            </div>
+            <h3 class="skill-title">BIM</h3>
+            <p class="skill-desc">Building Information Modelling concepts, 3D parametric components, floor-level organization, and coordinated design workflows.</p>
+            <div class="skill-learning-bar-wrapper">
+              <div class="skill-learning-status">
+                <span>Learning Focus</span>
+                <span>Core Interest</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-progress" style="width: 72%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 4: ETABS -->
+          <div class="skill-card cad-corner-marks" data-category="structural">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              </div>
+              <span class="skill-badge">Developing</span>
+            </div>
+            <h3 class="skill-title">ETABS</h3>
+            <p class="skill-desc">Basic structural modeling, frame member sizing, dead &amp; live load assignments, and understanding bending/shear response envelopes.</p>
+            <div class="skill-learning-bar-wrapper">
+              <div class="skill-learning-status">
+                <span>Learning Focus</span>
+                <span>Academic Study</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-progress" style="width: 68%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 5: Engineering Drawing -->
+          <div class="skill-card cad-corner-marks" data-category="cad">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </div>
+              <span class="skill-badge">Foundational</span>
+            </div>
+            <h3 class="skill-title">Engineering Drawing</h3>
+            <p class="skill-desc">Orthographic projections, isometric perspectives, sectioning principles, standard dimensioning conventions, and scales.</p>
+            <div class="skill-learning-bar-wrapper">
+              <div class="skill-learning-status">
+                <span>Learning Focus</span>
+                <span>Coursework Mastered</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-progress" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 6: 2D Drafting -->
+          <div class="skill-card cad-corner-marks" data-category="cad">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 22 22 22"></polygon></svg>
+              </div>
+              <span class="skill-badge">Developing</span>
+            </div>
+            <h3 class="skill-title">2D Drafting</h3>
+            <p class="skill-desc">Computer-aided generation of floor plans, elevations, wall schedules, cross-sections, and detail construction documentation.</p>
+            <div class="skill-learning-bar-wrapper">
+              <div class="skill-learning-status">
+                <span>Learning Focus</span>
+                <span>Active Practice</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-progress" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 7: Structural Modelling -->
+          <div class="skill-card cad-corner-marks" data-category="structural">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+              </div>
+              <span class="skill-badge">Developing</span>
+            </div>
+            <h3 class="skill-title">Structural Modelling</h3>
+            <p class="skill-desc">Understanding beam-column node networks, diaphragm constraints, member section assignment, and structural continuity.</p>
+            <div class="skill-learning-bar-wrapper">
+              <div class="skill-learning-status">
+                <span>Learning Focus</span>
+                <span>Analytical Practice</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-progress" style="width: 70%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 8: Building Planning -->
+          <div class="skill-card cad-corner-marks" data-category="cad">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              </div>
+              <span class="skill-badge">Developing</span>
+            </div>
+            <h3 class="skill-title">Building Planning</h3>
+            <p class="skill-desc">Spatial zoning, functional room allocation, circulation pathways, cross-ventilation, daylighting, and residential bye-law compliance.</p>
+            <div class="skill-learning-bar-wrapper">
+              <div class="skill-learning-status">
+                <span>Learning Focus</span>
+                <span>Active Design Study</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-progress" style="width: 75%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 9: 3D Visualization -->
+          <div class="skill-card cad-corner-marks" data-category="bim">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+              </div>
+              <span class="skill-badge">Developing</span>
+            </div>
+            <h3 class="skill-title">3D Visualization</h3>
+            <p class="skill-desc">3D spatial comprehension, isometric axonometric views, perspective rendering, and communicating architectural volume concepts.</p>
+            <div class="skill-learning-bar-wrapper">
+              <div class="skill-learning-status">
+                <span>Learning Focus</span>
+                <span>Exploration</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-progress" style="width: 68%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 10: Construction & Civil Fundamentals -->
+          <div class="skill-card cad-corner-marks" data-category="structural">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <span class="skill-badge">Foundational</span>
+            </div>
+            <h3 class="skill-title">Construction Fundamentals</h3>
+            <p class="skill-desc">Building materials (concrete, structural steel, masonry), foundation types, soil mechanics, load paths, and site execution concepts.</p>
+            <div class="skill-learning-bar-wrapper">
+              <div class="skill-learning-status">
+                <span>Learning Focus</span>
+                <span>Core Curriculum</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-progress" style="width: 82%;"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROJECTS SECTION
+         ========================================================================== -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="tech-badge">ACADEMIC &amp; LEARNING PROJECTS</div>
+          <h2 class="section-title">Engineering Project Concepts</h2>
+          <p class="section-subtitle">
+            A showcase of realistic academic design projects and conceptual student studies exploring CAD drafting, BIM building modeling, ETABS frame analysis, and Civil 3D site grading.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- PROJECT 1: Two-Storey 2BHK Residential Building -->
+          <div class="project-card cad-corner-marks">
+            <div class="project-preview">
+              <span class="project-academic-tag">Academic Design Project</span>
+              <!-- Blueprint Vector Thumbnail -->
+              <svg viewBox="0 0 400 220" class="project-blueprint-svg" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%" fill="#08101e"/>
+                <!-- Setback boundary -->
+                <rect x="20" y="20" width="360" height="180" fill="none" stroke="#2563eb" stroke-dasharray="4,2" stroke-width="1.2"/>
+                <!-- Main Building -->
+                <rect x="70" y="40" width="260" height="140" fill="rgba(37, 99, 235, 0.15)" stroke="#00d2ff" stroke-width="2"/>
+                <!-- Partitions -->
+                <line x1="180" y1="40" x2="180" y2="180" stroke="#38bdf8" stroke-width="1.5"/>
+                <line x1="70" y1="120" x2="180" y2="120" stroke="#38bdf8" stroke-width="1.2"/>
+                <line x1="180" y1="110" x2="330" y2="110" stroke="#38bdf8" stroke-width="1.2"/>
+                <!-- Text -->
+                <text x="125" y="80" fill="#f8fafc" font-size="10" font-family="monospace" text-anchor="middle">LIVING &amp; DINING</text>
+                <text x="125" y="150" fill="#94a3b8" font-size="9" font-family="monospace" text-anchor="middle">KITCHEN</text>
+                <text x="255" y="75" fill="#f8fafc" font-size="10" font-family="monospace" text-anchor="middle">MASTER BED (2BHK)</text>
+                <text x="255" y="145" fill="#f8fafc" font-size="10" font-family="monospace" text-anchor="middle">BEDROOM 02</text>
+                <!-- Parking / Garden -->
+                <rect x="25" y="100" width="40" height="75" fill="rgba(16, 185, 129, 0.15)" stroke="#10b981" stroke-width="1"/>
+                <text x="45" y="140" fill="#10b981" font-size="7" font-family="monospace" text-anchor="middle" transform="rotate(-90 45 140)">PARKING</text>
+              </svg>
+              <div class="project-tools-badges">
+                <span class="tool-chip">AutoCAD</span>
+                <span class="tool-chip">2D Drafting</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <span class="project-num">PROJECT // 01</span>
+              <h3 class="project-title">Two-Storey 2BHK Residential Building</h3>
+              <p class="project-desc">
+                Comprehensive CAD-based residential design comprising multiple 2BHK units across two storeys. Encompasses detailed space allocation, circulation corridors, parking provisions, landscaped green lawn, floor plans, elevations, and isometric views.
+              </p>
+
+              <div class="project-key-specs">
+                <div class="spec-item"><span>Footprint:</span> <span class="val">~3,240 sq.ft / floor</span></div>
+                <div class="spec-item"><span>Config:</span> <span class="val">Two-Storey 2BHK</span></div>
+                <div class="spec-item"><span>Planning:</span> <span class="val">Parking &amp; Garden</span></div>
+                <div class="spec-item"><span>Tool:</span> <span class="val">AutoCAD / CAD Tools</span></div>
+              </div>
+
+              <div class="project-footer">
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan);">CAD BLUEPRINT COMPLETED</span>
+                <button class="btn btn-blueprint btn-sm btn-view-project" data-project="project1">
+                  View Blueprint &amp; Specs ➔
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: BIM-Based Residential Building Model -->
+          <div class="project-card cad-corner-marks">
+            <div class="project-preview">
+              <span class="project-academic-tag">Academic Learning Project</span>
+              <!-- Blueprint Vector Thumbnail -->
+              <svg viewBox="0 0 400 220" class="project-blueprint-svg" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%" fill="#08101e"/>
+                <!-- BIM Slabs Isometric -->
+                <polygon points="200,40 310,70 200,100 90,70" fill="rgba(37, 99, 235, 0.25)" stroke="#00d2ff" stroke-width="1.5"/>
+                <polygon points="200,95 310,125 200,155 90,125" fill="rgba(37, 99, 235, 0.35)" stroke="#38bdf8" stroke-width="1.5"/>
+                <polygon points="200,150 310,180 200,210 90,180" fill="rgba(15, 23, 42, 0.7)" stroke="#2563eb" stroke-width="1.5"/>
+                <!-- Columns -->
+                <line x1="90" y1="70" x2="90" y2="180" stroke="#00d2ff" stroke-width="2"/>
+                <line x1="200" y1="100" x2="200" y2="210" stroke="#00d2ff" stroke-width="2"/>
+                <line x1="310" y1="70" x2="310" y2="180" stroke="#00d2ff" stroke-width="2"/>
+                <!-- Callout -->
+                <text x="200" y="25" fill="#00d2ff" font-size="9" font-family="monospace" text-anchor="middle">PARAMETRIC 3D BIM ELEMENT STACK</text>
+              </svg>
+              <div class="project-tools-badges">
+                <span class="tool-chip">BIM</span>
+                <span class="tool-chip">3D Visualization</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <span class="project-num">PROJECT // 02</span>
+              <h3 class="project-title">BIM-Based Residential Building Model</h3>
+              <p class="project-desc">
+                Conceptual BIM study investigating parametric 3D building modeling. Emphasizes coordinated architectural and structural elements, floor-wise spatial hierarchy (Ground, First, Terrace), digital visualization, and understanding BIM lifecycle workflows.
+              </p>
+
+              <div class="project-key-specs">
+                <div class="spec-item"><span>Scope:</span> <span class="val">3D Building Modelling</span></div>
+                <div class="spec-item"><span>Elements:</span> <span class="val">Architectural &amp; Structural</span></div>
+                <div class="spec-item"><span>Hierarchy:</span> <span class="val">Floor-wise Organization</span></div>
+                <div class="spec-item"><span>Workflow:</span> <span class="val">Parametric BIM Principles</span></div>
+              </div>
+
+              <div class="project-footer">
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan);">CONCEPTUAL BIM MODEL</span>
+                <button class="btn btn-blueprint btn-sm btn-view-project" data-project="project2">
+                  View BIM Workflow ➔
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: Structural Analysis Study using ETABS -->
+          <div class="project-card cad-corner-marks">
+            <div class="project-preview">
+              <span class="project-academic-tag">Academic / Learning Project</span>
+              <!-- Blueprint Vector Thumbnail -->
+              <svg viewBox="0 0 400 220" class="project-blueprint-svg" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%" fill="#08101e"/>
+                <!-- Base Ground Line -->
+                <line x1="80" y1="180" x2="320" y2="180" stroke="#475569" stroke-width="2"/>
+                <!-- Supports -->
+                <polygon points="100,180 110,180 105,190" fill="#38bdf8"/>
+                <polygon points="200,180 210,180 205,190" fill="#38bdf8"/>
+                <polygon points="300,180 310,180 305,190" fill="#38bdf8"/>
+                <!-- Frame Columns -->
+                <line x1="105" y1="180" x2="105" y2="60" stroke="#38bdf8" stroke-width="3"/>
+                <line x1="205" y1="180" x2="205" y2="60" stroke="#38bdf8" stroke-width="3"/>
+                <line x1="305" y1="180" x2="305" y2="60" stroke="#38bdf8" stroke-width="3"/>
+                <!-- Beams -->
+                <line x1="105" y1="120" x2="305" y2="120" stroke="#00d2ff" stroke-width="2"/>
+                <line x1="105" y1="60" x2="305" y2="60" stroke="#00d2ff" stroke-width="2"/>
+                <!-- Moment Curve Overlay -->
+                <path d="M 105,120 Q 155,145 205,120 Q 255,145 305,120" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="3,2"/>
+                <text x="205" y="45" fill="#f59e0b" font-size="9" font-family="monospace" text-anchor="middle">GRAVITY &amp; LATERAL LOAD COMBINATIONS</text>
+              </svg>
+              <div class="project-tools-badges">
+                <span class="tool-chip">ETABS</span>
+                <span class="tool-chip">Structural Analysis</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <span class="project-num">PROJECT // 03</span>
+              <h3 class="project-title">Structural Analysis Study using ETABS</h3>
+              <p class="project-desc">
+                Academic structural engineering project analyzing multi-storey reinforced concrete moment-resisting frames. Includes column and beam modeling, boundary constraints, dead and live load assignments, and finite element response interpretation.
+              </p>
+
+              <div class="project-key-specs">
+                <div class="spec-item"><span>Software:</span> <span class="val">ETABS Analysis</span></div>
+                <div class="spec-item"><span>Modelling:</span> <span class="val">Column &amp; Beam Frames</span></div>
+                <div class="spec-item"><span>Loads:</span> <span class="val">Dead &amp; Live Gravity Loads</span></div>
+                <div class="spec-item"><span>Outputs:</span> <span class="val">Bending &amp; Shear Curves</span></div>
+              </div>
+
+              <div class="project-footer">
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan);">ANALYSIS STUDY COMPLETED</span>
+                <button class="btn btn-blueprint btn-sm btn-view-project" data-project="project3">
+                  View Analysis Study ➔
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 4: Civil 3D Site Development Concept -->
+          <div class="project-card cad-corner-marks">
+            <div class="project-preview">
+              <span class="project-academic-tag">Student Learning Project</span>
+              <!-- Blueprint Vector Thumbnail -->
+              <svg viewBox="0 0 400 220" class="project-blueprint-svg" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%" fill="#08101e"/>
+                <!-- Contours -->
+                <path d="M 20,50 Q 150,30 250,70 T 380,40" fill="none" stroke="#1e3a8a" stroke-width="1.5"/>
+                <path d="M 20,90 Q 160,70 260,110 T 380,80" fill="none" stroke="#0284c7" stroke-width="1.8"/>
+                <path d="M 20,130 Q 170,110 270,150 T 380,120" fill="none" stroke="#1e3a8a" stroke-width="1.5"/>
+                <path d="M 20,170 Q 180,150 280,190 T 380,160" fill="none" stroke="#0284c7" stroke-width="1.8"/>
+                <!-- Road Alignment -->
+                <path d="M 60,190 Q 180,160 220,100 T 340,30" fill="none" stroke="#00d2ff" stroke-width="3"/>
+                <text x="200" y="25" fill="#00d2ff" font-size="9" font-family="monospace" text-anchor="middle">TIN TERRAIN &amp; ROAD ALIGNMENT</text>
+              </svg>
+              <div class="project-tools-badges">
+                <span class="tool-chip">Civil 3D</span>
+                <span class="tool-chip">Grading Concepts</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <span class="project-num">PROJECT // 04</span>
+              <h3 class="project-title">Civil 3D Site Development Concept</h3>
+              <p class="project-desc">
+                Conceptual land development project utilizing Autodesk Civil 3D. Explores triangulated irregular network (TIN) surface terrain modeling, basic grading for proposed building pads, cut-and-fill optimization, and roadway centerline alignment geometry.
+              </p>
+
+              <div class="project-key-specs">
+                <div class="spec-item"><span>Software:</span> <span class="val">Autodesk Civil 3D</span></div>
+                <div class="spec-item"><span>Surface:</span> <span class="val">TIN Topographical Contours</span></div>
+                <div class="spec-item"><span>Grading:</span> <span class="val">Cut &amp; Fill Balancing</span></div>
+                <div class="spec-item"><span>Alignment:</span> <span class="val">Road Stations &amp; Profiles</span></div>
+              </div>
+
+              <div class="project-footer">
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan);">TERRAIN CONCEPT COMPLETED</span>
+                <button class="btn btn-blueprint btn-sm btn-view-project" data-project="project4">
+                  View Site Blueprint ➔
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CAREER INTERESTS (AREAS I'M EXPLORING)
+         ========================================================================== -->
+    <section class="section" id="career-interests">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="tech-badge">FORWARD HORIZONS</div>
+          <h2 class="section-title">Areas I&rsquo;m Exploring</h2>
+          <p class="section-subtitle">
+            Specialized engineering domains, infrastructure design fields, and digital methodologies I am actively studying and targeting for long-term professional growth.
+          </p>
+        </div>
+
+        <div class="areas-grid">
+          
+          <!-- Area 1: Structural Engineering -->
+          <div class="area-card cad-corner-marks">
+            <div class="area-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+            </div>
+            <h3 class="area-name">Structural Engineering</h3>
+            <p class="area-desc">RC &amp; steel structure mechanics, seismic design considerations, load redistribution, and structural safety codes.</p>
+          </div>
+
+          <!-- Area 2: BIM & Digital Construction -->
+          <div class="area-card cad-corner-marks">
+            <div class="area-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+            </div>
+            <h3 class="area-name">BIM &amp; Digital Construction</h3>
+            <p class="area-desc">Parametric coordination, clash detection, digital twins, and interdisciplinary data workflows for modern AEC projects.</p>
+          </div>
+
+          <!-- Area 3: Civil 3D & Infrastructure Design -->
+          <div class="area-card cad-corner-marks">
+            <div class="area-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon></svg>
+            </div>
+            <h3 class="area-name">Civil 3D &amp; Infrastructure Design</h3>
+            <p class="area-desc">Transportation geometry, corridor corridors, earthwork mass haul diagrams, and digital land development.</p>
+          </div>
+
+          <!-- Area 4: Building Planning -->
+          <div class="area-card cad-corner-marks">
+            <div class="area-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+            </div>
+            <h3 class="area-name">Building Planning</h3>
+            <p class="area-desc">Spatial zoning, architectural functionality, municipal bye-laws, NBC regulations, and user circulation flow.</p>
+          </div>
+
+          <!-- Area 5: Structural Analysis -->
+          <div class="area-card cad-corner-marks">
+            <div class="area-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            </div>
+            <h3 class="area-name">Structural Analysis</h3>
+            <p class="area-desc">Computational finite element modeling (FEM), moment curvature, frame stiffness matrices, and dynamic response.</p>
+          </div>
+
+          <!-- Area 6: Construction Technology -->
+          <div class="area-card cad-corner-marks">
+            <div class="area-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+            </div>
+            <h3 class="area-name">Construction Technology</h3>
+            <p class="area-desc">Modern construction materials, precast and modular systems, formwork design, and automated site execution.</p>
+          </div>
+
+          <!-- Area 7: Sustainable Infrastructure -->
+          <div class="area-card cad-corner-marks">
+            <div class="area-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12c0-2.8 1.15-5.33 3-7.14"></path><path d="M12 6v6l4 2"></path></svg>
+            </div>
+            <h3 class="area-name">Sustainable Infrastructure</h3>
+            <p class="area-desc">Low-carbon concrete alternatives, energy-efficient building envelopes, rainwater harvesting, and green infrastructure.</p>
+          </div>
+
+          <!-- Area 8: Smart Construction Technologies -->
+          <div class="area-card cad-corner-marks">
+            <div class="area-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <h3 class="area-name">Smart Construction Tech</h3>
+            <p class="area-desc">GIS mapping, drone photogrammetry for survey elevation, IoT sensors in concrete curing, and computerized site tracking.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROFESSIONAL GOAL BANNER
+         ========================================================================== -->
+    <section class="section" style="padding-top: 2rem;">
+      <div class="container">
+        <div class="goal-banner cad-corner-marks">
+          <span class="goal-header-tag">PROFESSIONAL OBJECTIVE</span>
+          <h2 class="goal-heading">&ldquo;Building the Future, One Structure at a Time.&rdquo;</h2>
+          <p class="goal-text">
+            &ldquo;My goal is to continuously develop my technical and problem-solving skills and become a highly capable civil engineering professional specializing in modern digital design, BIM and structural engineering workflows.&rdquo;
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="https://www.linkedin.com/in/yuvraj-singh-rathore-68978142/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              Connect on LinkedIn
+            </a>
+            <button class="btn btn-blueprint btn-open-resume">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download One-Page Resume
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="tech-badge">COMMUNICATION &amp; NETWORK</div>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-subtitle">
+            Open for academic discussions, civil engineering internships, CAD/BIM collaboration, and professional networking.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Direct Channels Card -->
+          <div class="contact-info-card cad-corner-marks">
+            <div>
+              <h3 style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 0.5rem;">Direct Channels</h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
+                Feel free to connect via LinkedIn, send an email, or get in touch for academic and career opportunities.
+              </p>
+
+              <div class="contact-channels-list">
+                
+                <!-- Email Channel -->
+                <div class="contact-channel-item">
+                  <div class="channel-icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div class="channel-info" style="flex: 1;">
+                    <span class="channel-label">Email Address</span>
+                    <a href="mailto:yuvrajsinghr1718@gmail.com" class="channel-val" style="color: var(--accent-cyan);">yuvrajsinghr1718@gmail.com</a>
+                  </div>
+                  <button class="btn-copy-info btn btn-outline btn-sm" data-copy="yuvrajsinghr1718@gmail.com" title="Copy Email">Copy</button>
+                </div>
+
+                <!-- Phone Channel -->
+                <div class="contact-channel-item">
+                  <div class="channel-icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </div>
+                  <div class="channel-info" style="flex: 1;">
+                    <span class="channel-label">Direct Contact</span>
+                    <a href="tel:+918320815826" class="channel-val" style="color: var(--accent-cyan);">+91 8320815826</a>
+                  </div>
+                  <button class="btn-copy-info btn btn-outline btn-sm" data-copy="+918320815826" title="Copy Phone">Copy</button>
+                </div>
+
+                <!-- LinkedIn Channel -->
+                <div class="contact-channel-item">
+                  <div class="channel-icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                  </div>
+                  <div class="channel-info" style="flex: 1;">
+                    <span class="channel-label">Professional Profile</span>
+                    <a href="https://www.linkedin.com/in/yuvraj-singh-rathore-68978142/" target="_blank" rel="noopener noreferrer" class="channel-val" style="color: var(--accent-cyan);">yuvraj-singh-rathore-68978142</a>
+                  </div>
+                  <a href="https://www.linkedin.com/in/yuvraj-singh-rathore-68978142/" target="_blank" rel="noopener noreferrer" class="btn btn-blueprint btn-sm">Visit</a>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="location-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Jaipur, Rajasthan, India</span>
+            </div>
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="contact-form-card cad-corner-marks">
+            <h3 style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 0.5rem;">Send a Message</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+              Fill in your message below to initiate contact.
+            </p>
+
+            <form id="portfolio-contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Er. Sharma" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="name@organization.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="Academic / BIM / CAD Opportunity" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                Send Inquiries
+              </button>
+
+              <div id="form-status" class="form-status"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-copy">
+        &copy; 2026 Yuvraj Singh Rathore. All Rights Reserved.
+      </div>
+
+      <div class="footer-social-links">
+        <a href="https://www.linkedin.com/in/yuvraj-singh-rathore-68978142/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+
+        <a href="mailto:yuvrajsinghr1718@gmail.com" class="social-icon-btn" aria-label="Send Email" title="Email">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+
+        <a href="tel:+918320815826" class="social-icon-btn" aria-label="Phone Call" title="Call">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to Top" title="Back to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- ==========================================================================
+       MODAL 1: PROJECT BLUEPRINT & SPECIFICATION VIEWER
+       ========================================================================== -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span id="modal-project-number" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-cyan); font-weight: 700;"></span>
+          <span style="color: var(--border-light);">|</span>
+          <span id="modal-project-tag" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);"></span>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Project Modal">&times;</button>
+      </div>
+
+      <div class="modal-content">
+        <h3 id="modal-project-title" style="font-size: 1.45rem; color: var(--text-primary); margin-bottom: 1.25rem;"></h3>
+        <div id="modal-project-body">
+          <!-- Populated dynamically by js/project-viewer.js -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 2: CLEAN ONE-PAGE RESUME VIEWER (PRINTABLE / PDF EXPORT)
+       ========================================================================== -->
+  <div class="modal-overlay" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="resume-title">
+    <div class="modal-box resume-modal-box">
+      <div class="modal-header" style="background: #f8fafc; border-bottom: 1px solid #cbd5e1;">
+        <div class="modal-title-group">
+          <span id="resume-title" style="font-family: var(--font-heading); font-weight: 700; color: #0f172a; font-size: 1.1rem;">
+            Curriculum Vitae // Yuvraj Singh Rathore
+          </span>
+        </div>
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+          <button id="print-resume-btn" class="btn btn-primary btn-sm btn-print-action">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            Print / Save as PDF
+          </button>
+          <button class="modal-close-btn" id="resume-close-btn" aria-label="Close Resume Modal" style="color: #475569;">&times;</button>
+        </div>
+      </div>
+
+      <div class="modal-content" style="padding: 0;">
+        <!-- Clean Printable A4 Resume Paper -->
+        <div class="resume-paper" id="resume-printable-area">
+          
+          <!-- Header -->
+          <div class="resume-header">
+            <div>
+              <h1 class="resume-name">YUVRAJ SINGH RATHORE</h1>
+              <p class="resume-headline">Civil Engineering Undergraduate | BIM &amp; CAD Enthusiast</p>
+              <p style="font-size: 0.85rem; color: #475569; margin-top: 0.25rem;">
+                JECRC University, Jaipur, Rajasthan, India
+              </p>
+            </div>
+            <div class="resume-contact-info">
+              <div>Email: yuvrajsinghr1718@gmail.com</div>
+              <div>Phone: +91 8320815826</div>
+              <div>Location: Jaipur, Rajasthan, India</div>
+              <div>LinkedIn: linkedin.com/in/yuvraj-singh-rathore-68978142</div>
+            </div>
+          </div>
+
+          <!-- Professional Summary -->
+          <div class="resume-section">
+            <h2 class="resume-section-title">Professional Profile</h2>
+            <p style="font-size: 0.85rem; color: #334155; line-height: 1.6;">
+              Undergraduate Civil Engineering student at JECRC University, Jaipur, with a strong academic foundation (9.0 SGPA in 1st Semester) and demonstrated dedication to modern digital civil engineering technologies, CAD drafting, BIM coordination, and structural modelling. Passionate about leveraging digital engineering tools including AutoCAD, Civil 3D, BIM, and ETABS to optimize the planning, analysis, and execution of sustainable infrastructure.
+            </p>
+          </div>
+
+          <!-- Education -->
+          <div class="resume-section">
+            <h2 class="resume-section-title">Education</h2>
+            
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <span>Bachelor of Technology (B.Tech) in Civil Engineering</span>
+                <span>2026 – Present (Exp. 2030)</span>
+              </div>
+              <div class="resume-item-sub">
+                <span>JECRC University, Jaipur, Rajasthan</span>
+                <span>Academic Session 2026–27 | <strong>SGPA: 9.0 / 10 (1st Sem)</strong></span>
+              </div>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <span>Class 12 (Senior Secondary) – RBSE Board</span>
+                <span>Passed in 2025</span>
+              </div>
+              <div class="resume-item-sub">
+                <span>Board of Secondary Education, Rajasthan</span>
+                <span>Score: <strong>89.00%</strong></span>
+              </div>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <span>Class 10 (Secondary) – RBSE Board</span>
+                <span>Passed in 2023</span>
+              </div>
+              <div class="resume-item-sub">
+                <span>Board of Secondary Education, Rajasthan</span>
+                <span>Score: <strong>89.67%</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Skills -->
+          <div class="resume-section">
+            <h2 class="resume-section-title">Technical Skills &amp; Software (Active Learning)</h2>
+            <div class="resume-skills-grid">
+              <div>
+                <strong>CAD &amp; Drafting:</strong> AutoCAD, 2D Drafting, Engineering Drawing, Building Planning
+              </div>
+              <div>
+                <strong>BIM &amp; 3D:</strong> BIM (Building Information Modelling), 3D Visualization
+              </div>
+              <div>
+                <strong>Structural &amp; Civil:</strong> ETABS, Structural Modelling, Construction Fundamentals
+              </div>
+              <div>
+                <strong>Infrastructure &amp; Land:</strong> Autodesk Civil 3D (Surface &amp; Alignment Concepts)
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic & Concept Projects -->
+          <div class="resume-section">
+            <h2 class="resume-section-title">Academic &amp; Concept Design Projects</h2>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <span>Two-Storey 2BHK Residential Building Design</span>
+                <span>Academic Design Project</span>
+              </div>
+              <div class="resume-item-sub">
+                <span>Tools: AutoCAD, CAD Tools, 2D Drafting</span>
+                <span>Area: ~3,240 sq. ft. per floor</span>
+              </div>
+              <ul class="resume-list">
+                <li>Designed two-storey residential layout with multiple 2BHK unit configurations, room space allocation, and functional circulation.</li>
+                <li>Planned dedicated vehicular parking bays, exterior boundary setbacks, and landscaped perimeter garden lawn.</li>
+                <li>Drafted detailed architectural floor plans, front elevations, and isometric views compliant with building codes.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <span>BIM-Based Residential Building Model</span>
+                <span>Academic Learning Project</span>
+              </div>
+              <div class="resume-item-sub">
+                <span>Tools: BIM Modelling Concepts, 3D Visualization</span>
+                <span>LOD: 200/300 Coordinated Framework</span>
+              </div>
+              <ul class="resume-list">
+                <li>Explored parametric 3D building modeling coordinating architectural components (walls, windows, doors) with structural skeletons (RC columns, beams, floor slabs).</li>
+                <li>Formulated floor-wise building hierarchy across Ground, First Floor, and Terrace with element schedule properties.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <span>Structural Analysis Study using ETABS</span>
+                <span>Academic Learning Study</span>
+              </div>
+              <div class="resume-item-sub">
+                <span>Tools: ETABS, Finite Element Frame Modelling</span>
+                <span>Scope: RC Moment Resisting Frame</span>
+              </div>
+              <ul class="resume-list">
+                <li>Conducted frame modeling assigning column and beam cross-sections and fixed support boundary conditions.</li>
+                <li>Assigned dead, live, and preliminary lateral load combinations and analyzed resulting shear force and bending moment envelopes.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <span>Civil 3D Site Development Concept</span>
+                <span>Student Learning Concept</span>
+              </div>
+              <div class="resume-item-sub">
+                <span>Tools: Autodesk Civil 3D</span>
+                <span>Scope: TIN Surface &amp; Road Alignment</span>
+              </div>
+              <ul class="resume-list">
+                <li>Generated existing ground TIN surfaces with contour intervals from point cloud elevations.</li>
+                <li>Investigated terraced pad grading, cut-and-fill balancing concepts, and roadway centerline alignment stationing.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Career Focus Areas -->
+          <div class="resume-section" style="margin-bottom: 0;">
+            <h2 class="resume-section-title">Areas of Exploration &amp; Professional Goal</h2>
+            <p style="font-size: 0.82rem; color: #475569; line-height: 1.5;">
+              <strong>Target Domains:</strong> Structural Engineering, BIM &amp; Digital Construction, Civil 3D &amp; Infrastructure Design, Building Planning, Structural Analysis, Construction Technology, Sustainable Infrastructure, Smart Construction Technologies.<br>
+              <strong>Objective:</strong> To develop high-level problem-solving and digital modeling proficiencies, becoming an accomplished Civil Engineering professional delivering modern digital design and BIM workflows.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/project-viewer.js"></script>
+  <script src="js/hero-3d.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
